@@ -1,0 +1,157 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container{
+    /* text-align: center; */
+    height: 100%;
+    position: relative;
+}
+
+.header__container h1, h5{
+  color: white;
+  /* margin-top: -3rem; */
+}
+
+.header__container .hello{
+  margin-top: 7.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header__container .name{
+  font-weight: bold;
+  /* font-family: fantasy; */
+}
+
+/* .header__container .text-light{
+  color: aqua;
+} */
+
+/*______CTA _______*/
+.cta{
+    margin-top: 2.5rem;
+    left: 10%;
+    display: flex;
+    gap: 1.2rem;
+    /* justify-content: center; */
+    
+}
+.cta .btn{
+  background-color: rgb(142, 87, 253);
+  
+}
+
+.cta a:hover {
+  background-color: transparent;
+  border-color: rgb(142, 87, 253);
+  color: rgb(142, 87, 253);
+}
+
+.cta .let{
+  background-color: transparent;
+  border-color: rgb(142, 87, 253);
+  color: rgb(142, 87, 253);
+}
+
+.cta .let:hover{
+  background-color: rgb(142, 87, 253);
+  border-color: rgb(142, 87, 253);
+  color: black;
+}
+
+/*_________socials__________*/
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+
+/*_______me___________*/
+
+/* .me{
+    
+    background: linear-gradient(rgb(5, 4, 5), rgb(62, 85, 143));
+    width: 22rem;
+    height: 30rem;
+    
+    position: absolute;
+    left: calc(50% - 1rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 11.5rem 1.5rem ;
+    
+} */
+
+
+
+
+
+img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  position: relative;
+}
+
+
+.header__container .me img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  position: relative;
+  left: 90%;
+  top: -790px; 
+  transform: translateX(-50%);
+}
+
+
+
+.scroll__down{
+
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/*___________Media Queries(medium devices)______________*/
+
+@media screen and(max-width: 1024px){
+    header{
+        height: 68vh;
+    }
+}
+
+/*___________Media Queries(small devices)______________*/
+
+@media screen and(max-width: 600px){
+    header{
+        height: 100vh;
+    }
+
+    .header__socials, .scroll__down{
+        display: none;
+
+    }
+}
+
+
